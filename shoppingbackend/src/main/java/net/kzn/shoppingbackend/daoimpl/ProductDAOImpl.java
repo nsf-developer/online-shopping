@@ -57,8 +57,6 @@ public class ProductDAOImpl implements ProductDAO {
 		return false;
 	}
 
-	
-	
 	/*
 	 * UPDATE
 	 */
@@ -75,7 +73,6 @@ public class ProductDAOImpl implements ProductDAO {
 		return false;
 	}
 	
-
 	/*
 	 * DELETE
 	 */

@@ -118,6 +118,7 @@ public class CategoryTestCase {
 
 		// fetching the list
 		assertEquals("Successfully fetched a list of category", 1, categoryDAO.list().size());
+		
 	}
 
 }

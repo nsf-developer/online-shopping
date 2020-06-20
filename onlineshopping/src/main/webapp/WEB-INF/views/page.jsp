@@ -4,10 +4,11 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
+
 <spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
-
+ 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
 <!DOCTYPE html>
@@ -16,8 +17,7 @@
 <head>
 
 <meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -25,9 +25,7 @@
 
 <script>
 	window.menu = '${title}';
-	
 	window.contextRoot = '${contextRoot}'
-	
 </script>
 
 <!-- Bootstrap core CSS -->
@@ -40,7 +38,7 @@
 
 <!-- Custom styles for this template -->
 <link href="${css}/myapp5.css" rel="stylesheet">
-
+ 
 </head>
 
 <body>
@@ -52,7 +50,6 @@
 
 
 		<!-- Page Content -->
-
 		<div class="content">
 
 			<!-- Loading the home content  -->
@@ -86,28 +83,28 @@
 				<%@include file="manageProducts.jsp"%>
 			</c:if>
 			
-
 		</div>
 
 		<!-- Footer -->
 		<%@include file="./shared/footer.jsp"%>
 
-
-
-		<!-- Bootstrap core JavaScript -->
+		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
 
+		<!-- Bootstrap core JavaScript -->
 		<script src="${js}/bootstrap.bundle.min.js"></script>
 
 		<!-- DataTable Plugin -->
 		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<!-- DataTable Bootstrap Script -->
 		<script src="${js}/dataTables.bootstrap4.js"></script>
 		
+		<!-- Bootbox -->
+		<script src="${js}/bootbox2.min.js"></script>
 
 		<!-- Self  Coded JavaScript -->
 		<script src="${js}/myapp.js"></script>
-
-
 
 	</div>
 

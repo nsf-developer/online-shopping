@@ -58,21 +58,21 @@ public class ProductTestCase {
 	
 	  @Test public void testListActiveProducts() {
 	  assertEquals("Somthing went wrong while fetching the list of products!",
-	  5,productDAO.listActiveProducts().size()); }
+	  8,productDAO.listActiveProducts().size()); }
 	  
 	  
 	  @Test public void testListActiveProductsByCategory() {
 	  assertEquals("Somthing went wrong while fetching the list of products!",
-	  3,productDAO.listActiveProductsByCategory(1).size());
+	  4,productDAO.listActiveProductsByCategory(1).size());
 	  assertEquals("Somthing went wrong while fetching the list of products!",
-	  1,productDAO.listActiveProductsByCategory(2).size()); 
+	  2,productDAO.listActiveProductsByCategory(2).size()); 
 	  assertEquals("Somthing went wrong while fetching the list of products!",
-	  1,productDAO.listActiveProductsByCategory(3).size()); }
+	  2,productDAO.listActiveProductsByCategory(3).size()); }
 	  
 	  
 	  @Test public void testGetLatestActiveProduct() {
 	  assertEquals("Somthing went wrong while fetching the list of products!",
-	  3,productDAO.getLatestActiveProducts(3).size()); }
+	  1,productDAO.getLatestActiveProducts(165).size()); }
 	 
 
 }

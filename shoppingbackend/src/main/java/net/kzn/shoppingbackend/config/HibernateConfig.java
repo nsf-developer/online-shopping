@@ -23,7 +23,6 @@ public class HibernateConfig {
 	private final static String DATABASE_DIALECT = "org.hibernate.dialect.H2Dialect";
 	private final static String DATABASE_USERNAME = "sa";
 	private final static String DATABASE_PASSWORD = "";
-
 	
 	@Bean
 	public DataSource getDataSource() {
@@ -34,10 +33,9 @@ public class HibernateConfig {
 		dataSource.setUrl(DATABASE_URL);
 		dataSource.setUsername(DATABASE_USERNAME);
 		dataSource.setPassword(DATABASE_PASSWORD);
-		
-		
-		
+			
 		return dataSource;
+	
 	}
 	
 	@Bean
@@ -47,14 +45,11 @@ public class HibernateConfig {
 	
 		builder.addProperties(getHibernateProperties());
 		builder.scanPackages("net.kzn.shoppingbackend.dto");
-		
-		
+			
 		return builder.buildSessionFactory();
 		
 	}
 
-	
-	
 	private Properties getHibernateProperties() {
 
 		Properties properties = new Properties();
@@ -64,20 +59,16 @@ public class HibernateConfig {
 		properties.put("hibernate.formate_sql", "true");
 		
 		return properties;
+		
 	}
 	
 	// transactionManager Bean
-	
 	@Bean
 	public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory) {
 		
-		HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
-		
+		HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);		
 		
 		return transactionManager;
 	}
-	
-	
-	
-	
+		
 }

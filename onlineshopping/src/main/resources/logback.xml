@@ -7,19 +7,12 @@
 		</encoder>
 	</appender>
 
-
 	<logger name="net.kzn" level="DEBUG" additivity = "false">
 		<appender-ref ref="consoleAppender"/>
 	</logger>
 
-
 	<root level="INFO">
 		<appender-ref ref="consoleAppender"/>
 	</root>
-
-
-
-
-
 
 </configuration>

@@ -19,8 +19,6 @@ public class PageController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(PageController.class);
 	
-	
-	
 	@Autowired
 	private CategoryDAO categoryDAO; 
 	
@@ -68,28 +66,29 @@ public class PageController {
 	 * */
 	
 	@RequestMapping (value = "/show/all/products")
-
 	public ModelAndView showAllProducts() {
+		
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title","All Products");
 		
 		//passing the list of categories
-		mv.addObject("categories", categoryDAO.list());
-		
+		mv.addObject("categories", categoryDAO.list());	
 		mv.addObject("userClickAllProducts",true);
+		
 		return mv;
+		
 	}
 	
+	
 	@RequestMapping (value = "/show/category/{id}/products")
-
 	public ModelAndView showCategoryProducts(@PathVariable("id") int id) {
+		
 		ModelAndView mv = new ModelAndView("page");
 		
 		/*
 		 *  categoryDAO to fetch a single category
 		 * */
 		Category category = null;
-		
 		category = categoryDAO.get(id);
 		
 		mv.addObject("title",category.getName());
@@ -102,6 +101,7 @@ public class PageController {
 		
 		mv.addObject("userClickCategoryProducts",true);
 		return mv;
+		
 	}
 	
 	
@@ -117,7 +117,6 @@ public class PageController {
 		
 		if(product == null) throw new ProductNotFoundException();
 		
-		
 		// update the view count
 		product.setViews(product.getViews() + 1);
 		productDAO.update(product);
@@ -129,12 +128,7 @@ public class PageController {
 		mv.addObject("userClickShowProduct", true);
 		
 		return mv;
+		
 	}
-	
-	
-	
-	
-	
-	
 
 }

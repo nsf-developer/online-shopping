@@ -39,7 +39,6 @@ public class CategoryDAOimpl implements CategoryDAO {
 	}
 
 	@Override
-
 	public boolean add(Category category) {
 
 		try {

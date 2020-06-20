@@ -9,7 +9,6 @@ import javax.persistence.Id;
 @Entity
 public class Category {
 	
-	
 	public int getId() {
 		return id;
 	}
@@ -42,17 +41,11 @@ public class Category {
 	}
 	
 	
-	
-	
-	
 	@Override
 	public String toString() {
 		return "Category [id=" + id + ", name=" + name + ", description=" + description + ", imageURL=" + imageURL
 				+ ", active=" + active + "]";
 	}
-
-
-
 
 
 	/*

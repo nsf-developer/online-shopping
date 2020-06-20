@@ -6,11 +6,9 @@
 		<div class="col-xs-12">
 
 			<ol class="breadcrumb">
-
 				<li><a href="${contextRoot}/home">Home</a></li>
 				<li><a href="${contextRoot}/show/all/products">Products</a></li>
 				<li class="active">${product.name}</li>
-
 			</ol>
 
 		</div>
@@ -40,7 +38,7 @@
 			<hr />
 
 			<h4>
-				Price: <strong> ${product.unitPrice} Rs/-</strong>
+				Price: <strong> LKR ${product.unitPrice}0/-</strong>
 			</h4>
 			<hr />
 
@@ -61,33 +59,26 @@
 			<c:choose>
 
 				<c:when test="${product.quantity <1}">
-
-					<a href="javascript:void(0)" class="btn btn-success disabled"><strike>
-							<span class="glyphicon glyphicon-shopping-cart"></span>Add to
-							Cart
-					</strike></a>
-
+					<a href="javascript:void(0)" class="btn btn-success disabled">
+					<strike>
+							<span class="glyphicon glyphicon-shopping-cart"></span>
+							Add to Cart
+					</strike>
+					</a>
 				</c:when>
 
 				<c:otherwise>
-
-					<a href="${contextRoot}/cart/add/${product.id}/product"
-						class="btn btn-success"> <span
-						class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
+					<a href="${contextRoot}/cart/add/${product.id}/product" class="btn btn-success"> 
+					<span class="glyphicon glyphicon-shopping-cart"></span>
+						Add to Cart
 					</a>
-
 				</c:otherwise>
 
 			</c:choose>
 
-
-			<a href="${contextRoot}/show/all/products" class="btn btn-primary">
-				Back</a>
-
-
+			<a href="${contextRoot}/show/all/products" class="btn btn-primary">Back</a>
 
 		</div>
-
 
 	</div>
 
