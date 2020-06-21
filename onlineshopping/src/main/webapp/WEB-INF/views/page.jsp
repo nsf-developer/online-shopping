@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 
 <spring:url var="css" value="/resources/css" />
+<spring:url var="css2" value="/resources/css337" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
  
@@ -32,7 +31,9 @@
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap Litera Theme -->
-<link href="${css}/bootstrap.readable.theme.css" rel="stylesheet">
+<link href="${css}/bootstrap-readable2.css" rel="stylesheet">
+
+<%-- <link href="${css}/bootstrap-metaral.theme.css" rel="stylesheet"> --%>
 
 <link href="${css}/dataTables.bootstrap4.css" rel="stylesheet">
 
@@ -100,11 +101,13 @@
 		<!-- DataTable Bootstrap Script -->
 		<script src="${js}/dataTables.bootstrap4.js"></script>
 		
-		<!-- Bootbox -->
-		<script src="${js}/bootbox2.min.js"></script>
+		<%-- <!-- Bootbox -->
+		<script src="${js}/bootbox2.min.js"></script> --%>
 
 		<!-- Self  Coded JavaScript -->
 		<script src="${js}/myapp.js"></script>
+		
+	
 
 	</div>
 

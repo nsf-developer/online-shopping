@@ -195,6 +195,7 @@
 							<th>Id</th>
 							<th>&#160;</th>
 							<th>Name</th>
+							<th>Brand</th>
 							<th>Quantity</th>
 							<th>Unit Price</th>
 							<th>Active</th>
@@ -203,50 +204,7 @@
 
 					</thead>
 
-					<tbody>
 					
-						<tr>
-							<td>165</td>
-							<td><img class="adminDataTableImg"
-								src="${contextRoot}/resources/images/PRD5058892A41.jpg"
-								alt="Ecollagned" /></td>
-							<td>Ecollagned</td>
-							<td>3</td>
-							<td>LKR 1460</td>
-							<td>
-								<!-- toggle Switch --> 
-								<label class="switch"> 
-								<input type="checkbox" checked="checked" value="165" />
-								<div class="slider"></div>
-								</label>
-							</td>
-							<td><a href="${contextroot}/manage/165/products"
-								class="btn btn-warning"> <span
-									class="glyphicon glyphicon-pencil"></span>
-							</a></td>
-						</tr>
-
-						<tr>
-							<td>165</td>
-							<td><img class="adminDataTableImg"
-								src="${contextRoot}/resources/images/PRD5058892A41.jpg"
-								alt="Ecollagned" /></td>
-							<td>Ecollagned</td>
-							<td>3</td>
-							<td>LKR 1460</td>
-							<td>
-								<!-- toggle Switch --> 
-								<label class="switch"> <input type="checkbox" value="165" />
-								<div class="slider"></div>
-								</label>
-							</td>
-							<td><a href="${contextroot}/manage/165/products"
-								class="btn btn-warning"> <span
-									class="glyphicon glyphicon-pencil"></span>
-							</a></td>
-						</tr>
-
-					</tbody>
 
 					<tfoot>
 
@@ -254,6 +212,7 @@
 							<th>Id</th>
 							<th>&#160;</th>
 							<th>Name</th>
+							<th>Brand</th>
 							<th>Quantity</th>
 							<th>Unit Price</th>
 							<th>Active</th>

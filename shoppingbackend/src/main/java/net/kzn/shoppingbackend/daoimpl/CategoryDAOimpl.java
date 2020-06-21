@@ -14,7 +14,7 @@ import net.kzn.shoppingbackend.dto.Category;
 @Repository("categoryDAO")
 @Transactional
 public class CategoryDAOimpl implements CategoryDAO {
-
+	
 	@Autowired
 	private SessionFactory sessionFactory;
 
